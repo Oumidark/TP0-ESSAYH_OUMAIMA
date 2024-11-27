@@ -105,7 +105,7 @@ public class ChatBean implements Serializable {
             this.reponse = getConseilAleatoire();
         }
 
-        if (this.conversation.isEmpty()) {
+        if (conversation.length() == 0) {
             this.reponse = systemRole.toUpperCase(Locale.FRENCH) + "\n" + this.reponse;
             this.systemRoleChangeable = false;
         }
